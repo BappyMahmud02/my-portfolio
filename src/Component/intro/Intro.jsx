@@ -14,13 +14,13 @@ import FloatingDiv from '../floatingDiv/FloatingDiv';
 
 const Intro = () => {
     return (
-        <div className="Intro" id="Intro">
+        <div className="Intro container mx-auto" id="Intro">
             {/* left name side */}
             <div className="i-left">
                 <div className="i-name">
                     {/* yahan change hy darkmode ka */}
                     <span style={{}}>Hy! I Am</span>
-                    <span>Andrew Thomas</span>
+                    <span>Bappy Mahmud</span>
                     <span>
                         Frontend Developer with high level of experience in web designing
                         and development, producting the Quality work
@@ -55,6 +55,17 @@ const Intro = () => {
                 <div style={{ left: "0rem", top: "18rem" }}>
                     <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
                 </div>
+                <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+                <div
+                    className="blur"
+                    style={{
+                        background: "#C1F5FF",
+                        top: "17rem",
+                        width: "21rem",
+                        height: "11rem",
+                        left: "-9rem",
+                    }}
+                ></div>
             </div>
         </div>
     );
