@@ -10,6 +10,7 @@ import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
+import FloatingDiv from '../floatingDiv/FloatingDiv';
 
 const Intro = () => {
     return (
@@ -40,13 +41,20 @@ const Intro = () => {
                         <img src={Instagram} alt="" />
                     </Link>
                 </div>
-                {/* right image side */}
-                <div className="i-right">
-                    <img src={Vector1} alt="" />
-                    <img src={Vector2} alt="" />
-                    <img src={boy} alt="" />
-                </div>
+            </div>
+            {/* right image side */}
+            <div className="i-right">
+                <img src={Vector1} alt="" />
+                <img src={Vector2} alt="" />
+                <img src={boy} alt="" />
+                <img src={glassesimoji} alt="" />
 
+                <div style={{ top: "-4%", left: "52%" }}>
+                    <FloatingDiv img={crown} text1="Web" text2="Developer" />
+                </div>
+                <div style={{ left: "0rem", top: "18rem" }}>
+                    <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
+                </div>
             </div>
         </div>
     );
