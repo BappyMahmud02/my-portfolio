@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './NavBar.css';
+import Toggle from '../toggle/Toggle';
+import {Link} from 'react-scroll'
 
 const NavBar = () => {
     return (
@@ -8,7 +9,7 @@ const NavBar = () => {
             {/* left */}
             <div className="n-left">
                 <div className="n-name">Bappy</div>
-                <span>Toogle</span>
+                <Toggle/>
             </div>
             {/* right */}
             <div className="n-right ">

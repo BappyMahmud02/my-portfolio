@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Portfolio.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import Sidebar from "../../img/sidebar.png";
@@ -6,12 +6,15 @@ import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import "swiper/css";
+import { themeContext } from '../../Context';
 
 const Portfolio = () => {
+    const theme = useContext(themeContext)
+    const darkMood = theme.state.darkMood ;
     return (
         <div className="portfolio container mx-auto" id="portfolio">
             {/* heading */}
-            <span style={{ }}>Recent Projects</span>
+            <span style={{ color: darkMood?'white': ''}}>Recent Projects</span>
             <span>Portfolio</span>
 
             {/* slider */}

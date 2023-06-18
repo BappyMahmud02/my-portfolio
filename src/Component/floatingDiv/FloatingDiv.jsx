@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './FloatingDiv.css';
 
+
 const FloatingDiv = ({ img, text1, text2 }) => {
+    
     return (
         // darkMode
         <div className="floatingDiv">

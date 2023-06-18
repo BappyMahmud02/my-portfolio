@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Work.css'
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
+import { themeContext } from '../../Context';
+import { motion } from 'framer-motion'
+import {Link} from 'react-scroll'
 
 const Work = () => {
+    const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
     return (
         <div className='works container mx-auto '>
 
             <div className="awesome ">
                 {/* dark mode */}
-                <span style={{}}>Works for All these</span>
+                <span style={{color: darkMode ? "white" : "" }}>Works for All these</span>
                 <span >Brands Client</span>
                 <spane>
                     Lorem ispum is simpley dummy text of printing of printing Lorem
@@ -31,7 +36,13 @@ const Work = () => {
             {/* Right side  */}
 
             <div className="w-right">
-                <div className='w-mainCircle '>
+                <motion.div
+                initial={{ rotate: 180 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}
+                
+                className='w-mainCircle '>
 
 
                     <div className="w-secCircle">
@@ -53,7 +64,7 @@ const Work = () => {
                     {/* background Circles */}
                     <div className="w-backCircle blueCircle"></div>
                     <div className="w-backCircle yellowCircle"></div>
-                </div>
+                </motion.div>
             </div>
         </div>
 
