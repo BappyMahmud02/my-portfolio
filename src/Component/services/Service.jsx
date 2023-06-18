@@ -19,7 +19,7 @@ const Service = () => {
         type: "spring",
     };
     return (
-        <div className="services container mx-auto  font-semibold" >
+        <div className="services container mx-auto  font-semibold" id='Services' >
             {/* left side */}
             <div className="awesome mt-16 ">
                 {/* dark mode */}
