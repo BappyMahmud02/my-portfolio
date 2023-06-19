@@ -8,12 +8,12 @@ const NavBar = () => {
         <div className="n-wrapper mt-4 container mx-auto" id="Navbar">
             {/* left */}
             <div className="n-left">
-                <div className="n-name">Bappy</div>
+                <div className="n-name">Portfolio</div>
                 <Toggle/>
             </div>
             {/* right */}
             <div className="n-right ">
-                <div className="n-list font-semibold">
+                <div className="n-list text-2xl font-semibold">
                     <ul style={{ listStyleType: "none" }}>
                         <li>
                             <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
@@ -43,7 +43,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <Link to="contact" spy={true} smooth={true}>
-                    <button className="button n-button">Contact Me</button>
+                    <button className="button n-button">Contact</button>
                 </Link>
             </div>
         </div>

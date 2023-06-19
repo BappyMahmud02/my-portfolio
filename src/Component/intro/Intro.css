@@ -34,7 +34,8 @@
     margin-top: 10px;
   }
   .i-button {
-    width: 7rem;
+    font-weight: 700;
+    width: 8rem;
     height: 3rem;
   }
   .i-icons {

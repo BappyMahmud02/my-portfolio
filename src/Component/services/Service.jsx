@@ -3,6 +3,13 @@ import './Service.css'
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
+import html from '../../img/html-logo (1).png'
+import js from '../../img/javascript-logo.png'
+import tailwind from '../../img/tailwind-css (1).png'
+import react from '../../img/react.png'
+import bootstrap from '../../img/bootstrap-framework-logo.png'
+import nodejs from '../../img/nodejs.png'
+import mongodb from '../../img/mongodb.png'
 import Card from '../card/Card';
 import Resume from './resume.pdf';
 import { themeContext } from '../../Context';
@@ -31,26 +38,35 @@ const Service = () => {
                     ispum is simpley dummy text of printing
                 </spane>
                 <a href={Resume} download>
-                    <button className="button  s-button">Download CV</button>
+                    <button className="button  b-button">Download CV</button>
                 </a>
                 <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
             </div>
             {/* right  side*/}
             <div className="cards ">
-                <motion.div
-                    whileInView={{ left: "14rem" }}
-                    initial={{ left: "25rem" }}
-                    transition={transition}
+                
+                    <motion.div 
+                        whileInView={{ left: "14rem" }}
+                        initial={{ left: "25rem" }}
+                        transition={transition}
 
-                    style={{ left: '14rem' }}>
-                    <Card
-                        emoji={HeartEmoji}
-                        heading={"Design"}
-                        detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
-                    />
-                </motion.div>
+                        style={{ left: '14rem' }}>
+                        <Card
+
+                            html={html}
+                            bootstrap={bootstrap}
+                            js={js}
+                            tailwind={tailwind}
+                            nodejs={nodejs}
+                            mongodb={mongodb}
+                            react={react}
+                            heading={"Design"}
+
+                        />
+                    </motion.div>
+                
                 {/* second card */}
-                <motion.div
+                {/* <motion.div
                     initial={{ left: "-11rem", top: "12rem" }}
                     whileInView={{ left: "-4rem" }}
                     transition={transition}
@@ -60,9 +76,9 @@ const Service = () => {
                         heading={"Developer"}
                         detail={"Html, Css, JavaScript, React, Nodejs, Express"}
                     />
-                </motion.div>
+                </motion.div> */}
                 {/* Third card */}
-                <motion.div
+                {/* <motion.div
                     initial={{ top: "19rem", left: "25rem" }}
                     whileInView={{ left: "12rem" }}
                     transition={transition}
@@ -75,7 +91,7 @@ const Service = () => {
                         }
                         color="rgba(252, 166, 31, 0.45)"
                     />
-                </motion.div>
+                </motion.div> */}
                 <div
                     className="blur s-blur2"
                     style={{ background: "var(--purple)" }}

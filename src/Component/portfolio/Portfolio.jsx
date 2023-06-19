@@ -10,11 +10,11 @@ import { themeContext } from '../../Context';
 
 const Portfolio = () => {
     const theme = useContext(themeContext)
-    const darkMood = theme.state.darkMood ;
+    const darkMood = theme.state.darkMood;
     return (
-        <div className="portfolio container mx-auto" id="portfolio">
+        <div className="portfolio container mx-auto " id="portfolio">
             {/* heading */}
-            <span style={{ color: darkMood?'white': ''}}>Recent Projects</span>
+            <span style={{ color: darkMood ? 'white' : '' }}>Recent Projects</span>
             <span>Portfolio</span>
 
             {/* slider */}

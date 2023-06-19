@@ -38,9 +38,10 @@ const Contact = () => {
                     <span style={{color: darkMode?'white': ''}} className='font-bold text-[70px]'>Get in touch</span> <br />
                     <span className='contact font-bold text-[40px]'>Contact me</span>
                     <div
-                        className="blur s-blur1"
+                        className="blur c-blur1"
                         style={{ background: "#ABF1FF94" }}
                     ></div>
+                     
                 </div>
 
             </div>

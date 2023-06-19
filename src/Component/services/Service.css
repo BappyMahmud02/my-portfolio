@@ -35,9 +35,10 @@
     margin-top: 1rem;
 }
 
-.s-button {
-    width: 10rem;
-    height: 4rem;
+.b-button {
+    width: 11rem;
+    
+    height: 3.5rem;
     margin-top: 0.5rem;
 }
 
