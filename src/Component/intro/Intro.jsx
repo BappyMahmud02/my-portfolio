@@ -13,6 +13,8 @@ import crown from "../../img/crown.png";
 import FloatingDiv from '../floatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion'
+import Typed from 'react-typed';
+
 
 const Intro = () => {
     // Transition
@@ -29,8 +31,17 @@ const Intro = () => {
                     <span style={{ color: darkMood ? "white" : "" }}>Hey! I Am</span>
                     <span>Bappy Mahmud</span>
                     <span>
-                        Frontend Developer with high level of experience in web designing
-                        and development, producting the Quality work
+                        <Typed
+                            strings={[
+                                'I Am a Web Developer',
+                                'I Am a Full Stack Developer',
+                                'I Am a Frontend Developer']}
+                            typeSpeed={40}
+                            backSpeed={50}
+                            
+                            loop >
+                            
+                        </Typed>
                     </span>
                 </div>
                 <Link to="contact" smooth={true} spy={true}>
@@ -38,10 +49,10 @@ const Intro = () => {
                 </Link>
                 {/* social icons */}
                 <div className="i-icons">
-                    <Link>
+                    <Link to='https://github.com/BappyMahmud02' target='blank'>
                         <img src={Github} alt="" />
                     </Link>
-                    <Link>
+                    <Link to='https://www.linkedin.com/in/bappy-mahmud-47667a258/'>
                         <img src={LinkedIn} alt="" />
                     </Link>
                     <Link>
@@ -66,7 +77,7 @@ const Intro = () => {
                     transition={transition}
                     className="floating-div"
                     style={{ top: "-4%", left: "52%" }} >
-                    
+
                     <FloatingDiv img={crown} text1="Web" text2="Developer" />
                 </motion.div>
 
@@ -77,11 +88,11 @@ const Intro = () => {
                     transition={transition}
                     className="floating-div"
                     style={{ left: "0rem", top: "18rem" }}
-                    >
-                        <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
-                    </motion.div>
+                >
+                    <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
+                </motion.div>
 
-                
+
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
                 <div
                     className="blur"

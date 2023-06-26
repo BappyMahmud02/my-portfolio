@@ -1,8 +1,5 @@
 import React, { useContext } from 'react';
 import './Service.css'
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
 import html from '../../img/html-logo (1).png'
 import js from '../../img/javascript-logo.png'
 import tailwind from '../../img/tailwind-css (1).png'
@@ -11,7 +8,7 @@ import bootstrap from '../../img/bootstrap-framework-logo.png'
 import nodejs from '../../img/nodejs.png'
 import mongodb from '../../img/mongodb.png'
 import Card from '../card/Card';
-import Resume from './resume.pdf';
+import Resume from './Resume of Bappy.pdf';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion'
 
@@ -19,6 +16,8 @@ import { motion } from 'framer-motion'
 const Service = () => {
     const theme = useContext(themeContext)
     const darkMood = theme.state.darkMood;
+
+
 
     // transition
     const transition = {
@@ -44,8 +43,9 @@ const Service = () => {
             </div>
             {/* right  side*/}
             <div className="cards ">
-                
-                    <motion.div 
+
+                     <motion.div
+
                         whileInView={{ left: "14rem" }}
                         initial={{ left: "25rem" }}
                         transition={transition}
@@ -60,11 +60,12 @@ const Service = () => {
                             nodejs={nodejs}
                             mongodb={mongodb}
                             react={react}
-                            heading={"Design"}
+
 
                         />
                     </motion.div>
                 
+
                 {/* second card */}
                 {/* <motion.div
                     initial={{ left: "-11rem", top: "12rem" }}
