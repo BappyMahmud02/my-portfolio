@@ -14,6 +14,7 @@ import FloatingDiv from '../floatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion'
 import Typed from 'react-typed';
+import Resume from './Resume of Bappy.pdf';
 
 
 const Intro = () => {
@@ -44,9 +45,9 @@ const Intro = () => {
                         </Typed>
                     </span>
                 </div>
-                <Link to="contact" smooth={true} spy={true}>
-                    <button className="button i-button">Hire me</button>
-                </Link>
+                <a href={Resume} download>
+                    <button className="button  b-button">Download CV</button>
+                </a>
                 {/* social icons */}
                 <div className="i-icons">
                     <Link to='https://github.com/BappyMahmud02' target='blank'>

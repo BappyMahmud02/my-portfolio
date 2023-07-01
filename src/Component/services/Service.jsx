@@ -8,7 +8,6 @@ import bootstrap from '../../img/bootstrap-framework-logo.png'
 import nodejs from '../../img/nodejs.png'
 import mongodb from '../../img/mongodb.png'
 import Card from '../card/Card';
-import Resume from './Resume of Bappy.pdf';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion'
 
@@ -36,9 +35,7 @@ const Service = () => {
                     <br />
                     ispum is simpley dummy text of printing
                 </spane>
-                <a href={Resume} download>
-                    <button className="button  b-button">Download CV</button>
-                </a>
+                
                 <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
             </div>
             {/* right  side*/}
