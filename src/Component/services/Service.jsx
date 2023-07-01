@@ -33,7 +33,7 @@ const Service = () => {
                 <span className='' style={{ color: darkMood ? "white" : "" }}>My Awesome</span>
                 <span >services</span>
                 <spane>
-                    Lorem ispum is simpley dummy text of printing of printing Lorem
+                I am very comfortable with this tools
                     <br />
                     ispum is simpley dummy text of printing
                 </spane>
@@ -45,8 +45,8 @@ const Service = () => {
 
                      <motion.div
 
-                        whileInView={{ left: "14rem" }}
-                        initial={{ left: "25rem" }}
+                        whileInView={{ left: "19rem" }}
+                        initial={{ left: "29rem" }}
                         transition={transition}
 
                         style={{ left: '14rem' }}>

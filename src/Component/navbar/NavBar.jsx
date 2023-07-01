@@ -5,7 +5,8 @@ import {Link} from 'react-scroll'
 
 const NavBar = () => {
     return (
-        <div className="n-wrapper mt-4 container mx-auto" id="Navbar">
+        <div className="n-wrapper mt-4 
+        container mx-auto" id="Navbar">
             {/* left */}
             <div className="n-left">
                 <div className="n-name">Bappy</div>
