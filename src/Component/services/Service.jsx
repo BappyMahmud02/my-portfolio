@@ -6,6 +6,8 @@ import tailwind from '../../img/tailwind-css (1).png'
 import react from '../../img/react.png'
 import bootstrap from '../../img/bootstrap-framework-logo.png'
 import nodejs from '../../img/nodejs.png'
+import firebase from '../../img/firebase.png'
+import git from '../../img/git.png'
 import mongodb from '../../img/mongodb.png'
 import Card from '../card/Card';
 import { themeContext } from '../../Context';
@@ -57,39 +59,13 @@ const Service = () => {
                             nodejs={nodejs}
                             mongodb={mongodb}
                             react={react}
+                            firebase={firebase}
+                            git={git}
 
 
                         />
                     </motion.div>
                 
-
-                {/* second card */}
-                {/* <motion.div
-                    initial={{ left: "-11rem", top: "12rem" }}
-                    whileInView={{ left: "-4rem" }}
-                    transition={transition}
-                    style={{ top: '12rem', left: '30rem' }}>
-                    <Card
-                        emoji={Glasses}
-                        heading={"Developer"}
-                        detail={"Html, Css, JavaScript, React, Nodejs, Express"}
-                    />
-                </motion.div> */}
-                {/* Third card */}
-                {/* <motion.div
-                    initial={{ top: "19rem", left: "25rem" }}
-                    whileInView={{ left: "12rem" }}
-                    transition={transition}
-                    style={{ top: '29rem', left: '54rem' }}>
-                    <Card
-                        emoji={Humble}
-                        heading={"UI/UX"}
-                        detail={
-                            "Lorem ispum dummy text are usually use in section where we need some random text"
-                        }
-                        color="rgba(252, 166, 31, 0.45)"
-                    />
-                </motion.div> */}
                 <div
                     className="blur s-blur2"
                     style={{ background: "var(--purple)" }}

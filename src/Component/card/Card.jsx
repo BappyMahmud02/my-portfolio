@@ -2,7 +2,7 @@ import React, { } from 'react';
 import './Card.css'
 
 
-const Card = ({ heading, detail, color, html, bootstrap, tailwind, nodejs, mongodb, js, react }) => {
+const Card = ({ heading, detail, color, html, bootstrap, tailwind, nodejs, mongodb, js, react, firebase, git }) => {
 
   return (
     <div className="card" style={{ borderColor: { color } }}>
@@ -16,6 +16,8 @@ const Card = ({ heading, detail, color, html, bootstrap, tailwind, nodejs, mongo
         <img src={tailwind} alt="" />
         <img src={nodejs} alt="" />
         <img src={mongodb} alt="" />
+        <img src={firebase} alt="" />
+        <img src={git} alt="" />
         <span>{heading}</span>
         <span>{detail}</span>
         
