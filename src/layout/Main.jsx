@@ -24,9 +24,9 @@ const Main = () => {
             <Intro></Intro>
             <Service></Service>
             <Experiance></Experiance>
-            <Work></Work>
+            {/* <Work></Work> */}
             <Portfolio></Portfolio>
-            <Testimonials></Testimonials>
+            {/* <Testimonials></Testimonials> */}
             <Contact></Contact>
             <Footer></Footer>
             <Outlet></Outlet>

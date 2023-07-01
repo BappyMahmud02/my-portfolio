@@ -6,7 +6,7 @@ import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/me.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -65,14 +65,14 @@ const Intro = () => {
             <div className="i-right">
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
-                <img src={boy} alt="" />
-                <motion.img
+                <img className='h-[400px]' src={boy} alt="" />
+                {/* <motion.img
                     initial={{ left: '-36%' }}
                     whileInView={{ left: "-24%" }}
                     transition={transition}
-                    src={glassesimoji} alt="" />
+                    src={glassesimoji} alt="" /> */}
 
-                <motion.div
+                {/* <motion.div
                     initial={{ top: "-4%", left: "74%" }}
                     whileInView={{ left: "68%" }}
                     transition={transition}
@@ -80,10 +80,10 @@ const Intro = () => {
                     style={{ top: "-4%", left: "52%" }} >
 
                     <FloatingDiv img={crown} text1="Web" text2="Developer" />
-                </motion.div>
+                </motion.div> */}
 
                 {/* animation */}
-                <motion.div
+                {/* <motion.div
                     initial={{ left: "9rem", top: "18rem" }}
                     whileInView={{ left: "0rem" }}
                     transition={transition}
@@ -91,7 +91,7 @@ const Intro = () => {
                     style={{ left: "0rem", top: "18rem" }}
                 >
                     <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
-                </motion.div>
+                </motion.div> */}
 
 
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="n-wrapper mt-4 container mx-auto" id="Navbar">
             {/* left */}
             <div className="n-left">
-                <div className="n-name">Portfolio</div>
+                <div className="n-name">Bappy</div>
                 <Toggle/>
             </div>
             {/* right */}

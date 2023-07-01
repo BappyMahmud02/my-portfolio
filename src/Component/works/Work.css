@@ -4,14 +4,14 @@
     
     align-items: center;
     align-items: center;
-    /* height: 90vh; */
+    
     margin-top: 23rem;
     
   
-    /* scroll */
+   
     align-items: center;
   }
-  /* left side */
+ 
   .awesome {
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
     box-shadow: var(--smboxShadow);
     top: 1rem;
     background: white;
-    /* darkMode */
+    
     z-index: 2;
   }
   .w-mainCircle > * {
@@ -101,7 +101,7 @@
     height: 13rem;
     width: 13rem;
     border-radius: 100%;
-    /* darkMode */
+    
     z-index: 1;
   }
   .blueCircle {
